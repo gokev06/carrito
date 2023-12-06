@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Hedvig+Letters+Sans&family=Noto+Serif:wght@700&family=Open+Sans:wght@400;500&family=Oregano&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Abril Fatface', serif;
+
+
+font-family: 'Open Sans', sans-serif;
+  }
+  
+  body {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  header{
+    width: 100%;
+    height: 110px;
+    background-color: #2a2a2a;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 100px;
+  }
+
+  .title{
+    display: flex;
+  }
+  header h1{
+    color: white;
+    font-size: 25px;
+  }
+  .right{
+    display: flex;
+  }
+  .right input{
+    color: #2a2a2a;
+    background-color: white;
+    border-radius: 10px;
+    border: none;
+    height: 30px;
+    width: 150px;
+    font-size: 13px;
+    margin-left: 30px;
+  }
+  .right button{
+    color: #2a2a2a;
+    background-color: white;
+    border-radius: 10px;
+    border: none;
+    height: 30px;
+    width: 150px;
+    font-size: 13px;
+    cursor: pointer;
+    margin-left: 30px;
+  }
+
+  .red{
+    color: red;
+  }
+
+
+  .modal-upload,
+  .modal {
+    width: 20rem;
+    height: 20rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    z-index: 1;
+    margin-top: 150px;
+    background-color: white;
+    border-radius: 50px;
+    border: 3px solid #2a2a2a;
+    display: none;
+  }
+  .modal-upload > input,
+  .modal > input{
+    width: 10rem;
+    height: 1.8rem;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    border: 2px solid #2a2a2a;
+  }
+
+
+  .modal > input[type="file"]{
+    width: 14rem;
+    height: 2rem ;
+    border-radius: 5px;
+    font-size: 1rem;
+    margin-left: 4rem;
+    border:none;
+  }
+
+
+  .modal-upload > button,
+  .modal > button{
+    width: 12rem;
+    height: 2rem;
+    border-radius: 15px;
+    font-size: 1rem;
+    cursor: pointer;
+    background-color: #2a2a2a;
+    color: white;
+    border: none;
+  }
+
+  
+  .modal-upload > button:hover
+  .modal > button:hover{
+    background-color: white;
+    color: #2a2a2a;
+    border: 2px solid #2a2a2a;
+      }
+
+  #close-modal-upload,
+  #close-modal{
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    font-size: 1rem;
+    cursor: pointer;
+    position: absolute;
+    top: 2rem;
+    right: 1rem;
+  }
+  main {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .card {
+    width: 13rem;
+    height: 15rem;
+    border-radius: 10px;
+    border:2px  solid #2a2a2a;
+    background-color: white;
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .card > h2 {
+    text-align: center;
+    font-size: 15px;
+    margin-top: 0.5rem;
+  }
+  
+  .card > p {
+    text-align: center;
+    margin-top: 0.5rem;
+    font-weight: 600;
+    font-size: 10px ;
+  }
+  
+  .card > button {
+    margin-top: 1rem;
+    width: 80%;
+    height: 35px;
+    font-size: 15px;
+    cursor: pointer;
+    background-color: white;
+    color:#2a2a2a;
+    border: 2px solid #2a2a2a;
+    border-radius: 10px;
+  }
+
+  .card > button:hover{
+
+    background-color: #2a2a2a;
+    color: white;
+  }
+
+  .card > img{
+    padding:5px 0;
+    width: 90px;
+    height: 90px;
+  }

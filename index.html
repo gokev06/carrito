@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bavin-Cell</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <script src="jquery-3.7.0.min.js"></script>
+</head>
+<body>
+    <header>
+        <div class="title">
+        <h1>Bavin</h1><h1 class="red">-Cell</h1>
+    </div>
+    <div class="right">
+        <form action="">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="Heading" viewBox="0 0 16 16">
+                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+            </svg>
+        <input class="form-control col-md-7" id="input_buscar" name="busqueda" style="margin:0px" type="search" placeholder="   Buscardor">
+    </form>
+        <button id="btn-upload">Actualizar producto</button>
+        <button id="btn-create">Agregar un producto</button>
+        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white" style="margin-left: 30px; cursor:pointer;" class="bi bi-cart-fill" viewBox="0 0 16 16">
+            <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+          </svg>
+    </div>
+    </header>
+    <div id="cart">
+        <!-- Área para mostrar los productos en el carrito -->
+        <div class="cart-items" id="cart-items">
+          <!-- Los productos agregados se mostrarán aquí -->
+        </div>
+      
+        <!-- Total y botones de acción -->
+        <div class="cart-summary">
+          <h2>Resumen del Carrito</h2>
+          <p>Total: <span id="cart-total">$0</span></p>
+          <button id="empty-cart">Vaciar Carrito</button>
+          <button id="checkout">Checkout</button>
+        </div>
+      </div>
+    <div class="modal-upload">
+        <button id="close-modal-upload">X</button>
+        <input type="text" id="id-product" placeholder="ingrese id del producto">
+        <button id="buscar-product">Buscar producto</button>
+        <input type="text" id="update-name" placeholder="Nombre Del producto">
+        <input type="text" id="update-price" placeholder="Precio">
+        <input type="text" id="update-category" placeholder="Marca del producto">
+        <button id="btn-new-update">Actualizar producto</button>
+    </div>
+    <div class="modal">
+        <button id="close-modal">X</button>
+        <input type="text" id="new-name" placeholder="Nombre Del producto">
+        <input type="text" id="new-price" placeholder="Precio">
+        <input type="text" id="new-category" placeholder="Marca del producto">
+        <input type="file" name="" id="new-image">
+        <button id="btn-new-create">Crear nuevo producto</button>
+    </div>
+    <div class="modal">
+        <button id="close-modal">X</button>
+        <input type="text" id="new-name" placeholder="Nombre Del producto">
+        <input type="text" id="new-price" placeholder="Precio">
+        <input type="text" id="new-category" placeholder="Marca del producto">
+        <input type="file" name="" id="new-image">
+        <button id="btn-new-create">Crear nuevo producto</button>
+
+    </div>
+    <main id="main">
+        
+    </main>
+</body>
+<script src="app.js"></script>
+</html>
